@@ -1,0 +1,103 @@
+  /* Estilos generales para la lista */
+  .form-control{
+    display: inline;
+    width: 90%;
+  }
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    /* margin-top: 100px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #3f51b5;
+  }
+  
+  /* Cabecera con logo y fondo verde claro */
+  .header {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #00efd9; /* Fondo verde claro */
+    padding: 20px 0; /* Espaciado en la parte superior e inferior */
+    display: flex;
+    justify-content: center; /* Centrar el logo */
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 50px; /* Tamaño del logo */
+    width: auto;
+  }
+  
+  /* Estilo para el campo de entrada de la tarea */
+  .todo-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la lista de tareas */
+  .todo-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  mat-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  mat-checkbox {
+    flex: 1;
+    color: #3f51b5;
+  }
+  
+  button[mat-icon-button] {
+    color: #ff4081;
+  }
+  
+  /* Agrega estos estilos si el combo no se muestra bien */
+  mat-form-field {
+    width: 100%;  /* Asegúrate de que ocupe todo el ancho disponible */
+    margin-bottom: 20px;  /* Espacio entre el select y otros elementos */
+  }
+  
+  mat-select {
+    width: 90%;  /* Ocupa todo el ancho disponible dentro del mat-form-field */
+  }
+
+  /* Mantener el botón fijo en la parte inferior */
+  .fixed-bottom {
+    position: fixed;
+    bottom: 20px;  /* Espacio desde el fondo */
+    left: 50%;  /* Centrar horizontalmente */
+    transform: translateX(-50%);  /* Alinear el botón exactamente en el centro */
+    z-index: 10;  /* Asegurarse de que esté por encima de otros elementos */
+  }
+  
+  
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    .todo-container {
+      padding: 15px;
+    }
+    
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  
